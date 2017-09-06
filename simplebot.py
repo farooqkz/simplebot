@@ -10,8 +10,8 @@ server = socket.socket()
 server.connect((HOST, PORT))
 
 server.send(bytes("USER " + NICK + " " + NICK + " " + NICK + " :" + 
-    NICK + "\r\n" + "NICK " + NICK + "\r\n" + "JOIN ##pcworms\r\n" +
-    "PRIVMSG ##pcworms :Hi!\r\n", 'utf-8'))
+    NICK + "\r\n" + "NICK " + NICK + "\r\n" + "JOIN ##temp\r\n" +
+    "PRIVMSG ##temp :Hi!\r\n", 'utf-8'))
     
 # i'm not sure that this line is neccesery!so you may remove it!
 server.send(bytes("PRIVMSG NickServ :identify whoo whoo", 'utf-8'))
